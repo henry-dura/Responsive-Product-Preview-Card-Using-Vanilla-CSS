@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,58 +7,107 @@
 }
 
 body{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    gap: 10px; */
+   
     background-color: hsl(30, 38%, 92%);
     font-size: 14px;
 }
 
 .main-container{
     padding: 25px 15px;
-    /* width: 80%; */
-    /* height: 650px; */
-    border: 2px solid red;
 }
 
 .column-1{
     background-image: url('images/image-product-mobile.jpg');
     height: 300px;
-    /* width: 100%; */
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    margin-bottom: 30px;
-    /* border: 3px dotted green; */
-   
-    /* padding: 15px; */
+    
 }
 .column-2{
-    /* border: 2px solid;
-    /* height: 350px; */
     padding: 25px; 
-
+    background-color:hsl(0, 0%, 100%) ;
 }
+
+h1,h3,p{
+    margin-bottom: 16px;
+}
+
+.name{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+}
+
+.write-up{
+    line-height: 1.5rem;
+}
+
+.price-list{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem
+}
+
+.price-list h3{
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%) ;
+    font-family: 'Fraunces', serif;
+    
+}
+.price-list p{
+    text-decoration: line-through;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    width: 100%;
+    border: none;
+    padding: 8px 0px;
+    border-radius: 5px;
+    
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button span{
+    padding-left: 10px;
+}
+
 
 
 
 @media (min-width:375px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        gap: 30px;    
+    }
+
+
    .main-container{
     display: flex;
-    /* width: 50%; */
+    width: 500px;
+    height: 450px;
    }
    .column-1{
     background-image: url('images/image-product-desktop.jpg');
     flex-basis: 50%;
+    height: 100%;
     background-repeat: no-repeat;
-   
     background-size: cover;
-    
-
    }
+
    .column-2{
     flex-basis: 50%;
    }
