@@ -39,7 +39,8 @@ h1,h3,p{
 .name{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.7;
 }
 
 h1{
@@ -48,22 +49,24 @@ h1{
 
 .write-up{
     line-height: 1.5rem;
+    opacity: 0.7;
 }
 
 .price-list{
     display: flex;
     align-items: center;
-    gap: 1.2rem
+    gap: 0.8rem
 }
 
 .price-list h3{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: hsl(158, 36%, 37%) ;
     font-family: 'Fraunces', serif;
     
 }
 .price-list p{
     text-decoration: line-through;
+    opacity: 0.7;
 }
 
 button {
@@ -102,8 +105,10 @@ button span{
 
    .main-container{
     display: flex;
-    width: 500px;
+    width: 490px;
     height: 450px;
+    
+    
    
    }
    .column-1{
@@ -116,10 +121,15 @@ button span{
 
    .column-2{
     flex-basis: 50%;
+    
    }
-   h1,h3,p{
-    margin-bottom: 27px;
-}
+   
+ h1,h3,p{
+    margin-bottom: 25px;
+} 
+button{
+    margin-bottom: 15px;
+   }
    
 
 }
