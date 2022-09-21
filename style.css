@@ -13,7 +13,10 @@ body{
 }
 
 .main-container{
-    padding: 25px 15px;
+    margin: 25px 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
 .column-1{
@@ -69,7 +72,8 @@ button {
     width: 100%;
     border: none;
     padding: 8px 0px;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
 }
 
@@ -81,7 +85,8 @@ button span{
     padding-left: 10px;
 }
 
-
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
 
 
 @media (min-width:375px){
@@ -99,6 +104,7 @@ button span{
     display: flex;
     width: 500px;
     height: 450px;
+   
    }
    .column-1{
     background-image: url('images/image-product-desktop.jpg');
@@ -111,5 +117,9 @@ button span{
    .column-2{
     flex-basis: 50%;
    }
+   h1,h3,p{
+    margin-bottom: 27px;
+}
+   
 
 }
