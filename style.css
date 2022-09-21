@@ -58,8 +58,8 @@ h1{
     gap: 0.8rem
 }
 
-.price-list h3{
-    font-size: 1.5rem;
+.price-list h2{
+    font-size: 1.3rem;
     color: hsl(158, 36%, 37%) ;
     font-family: 'Fraunces', serif;
     
@@ -124,7 +124,7 @@ button span{
     
    }
    
- h1,h3,p{
+ h1,h2,p{
     margin-bottom: 25px;
 } 
 button{
